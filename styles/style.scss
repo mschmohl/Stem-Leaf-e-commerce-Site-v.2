@@ -20,7 +20,18 @@
 li {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    color: var(--colorDkGreen);
+    text-decoration: none;
 }
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--colorWhite);
+    text-decoration: none;
+    line-height: 40px;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.25rem;
@@ -39,7 +50,12 @@ h4{
 p {
     font-family: 'montserrat';
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
 /* Header Styles */
@@ -302,4 +318,138 @@ li:hover{
     text-align: center;
     margin-bottom: 1rem;
  }
+
+/* Check Out Our Blog Section */
+.blog-container {
+    background-color: var(--colorLtGreen);
+    padding: 3rem;
+}
+
+.blog-post-cards {
+    display: flex; 
+    justify-content: space-between;    
+}
+
+.blog-post-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+ }
+
+.blog-title-text {
+    margin: 1rem 0;
+}
+
+.border-b {
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+    display: inline-block;
+    border-bottom: 2px solid var(--colorDkGreen);
+    width: 90px;
+    cursor: pointer;
+}
+
+/* Care section */
+.care-container {
+    background-color: var(--colorFleshPink);
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.care-title {
+    font-family: Caudex;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.care-text {
+    width: 40%;
+}
+
+.care-img {
+    width: 60%;
+}
+
+.care-btn {
+    height: 2.5rem;
+    width: 10rem;
+    background-color: var(--colorWhite);
+    border: 1px var(--colorDkGreen) solid;
+    border-radius: 5px;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
+    filter: drop-shadow(5px 5px 5px #8d99ae);
+    cursor: pointer;
+}
+
+/* Footer section */
+.page-footer {
+    background-color: var(--colorDkGreen);
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--colorWhite);
+}
+
+.footer-top-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-bottom: 1rem;
+}
+
+.email-list-invite {
+    width: 30vw;
+}
+
+.email-input {
+    display: flex;
+    
+}
+
+.email-text {
+    padding: 1rem .5rem;
+    border: none;
+    width: 70%;
+}
+
+.email-btn {
+    padding: 1rem 2rem;
+    background-color: var(--colorTan);
+    border: none;
+    cursor: pointer;
+}
+
+.email-btn:hover {
+    font-weight: 900;
+}
+
+.socials {
+    align-self: center;
+    padding: 2rem;
+}
+
+.socials img {
+    width: 2rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--colorWhite);
+    color: var(--colorWhite);
+}
+
+.footer-bottom img {
+    margin-left: -4.5rem;
+}
 

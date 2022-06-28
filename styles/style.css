@@ -105,6 +105,7 @@ li:hover {
   height: 2.5rem;
   background-color: var(--colorWhite);
   border: 1px var(--colorDkGreen) solid;
+  cursor: pointer;
 }
 
 .create-button {
@@ -113,6 +114,12 @@ li:hover {
   background-color: var(--colorDkGreen);
   border: 1px var(--colorDkGreen) solid;
   color: var(--colorWhite);
+  cursor: pointer;
+}
+
+.login-button:hover, .create-button:hover,
+.shop-button:hover, .our-story:hover, .care-btn:hover {
+  font-weight: 900;
 }
 
 /* Alert  Banner */
@@ -140,25 +147,44 @@ li:hover {
 /* Collection Sections */
 .section-title {
   text-align: center;
+  padding-top: 3rem;
   margin-bottom: 2rem;
 }
 
 .green {
   background-color: var(--colorLtGreen);
   width: 100%;
-  padding: 3rem 0 3rem 0;
 }
 
 .white {
   background-color: var(--colorWhite);
   width: 100%;
-  padding: 3rem 0 3rem 0;
+  margin-top: -4rem;
 }
 
 .tan {
   background-color: var(--colorTan);
   width: 100%;
-  padding: 3rem 0 3rem 0;
+}
+
+.tan-wave-top {
+  margin: 3rem 0 -8rem 0;
+  display: block;
+}
+
+.tan-wave-bottom {
+  margin-top: -3rem;
+  display: block;
+}
+
+.green-wave-top {
+  margin: 3rem 0 -8rem 0;
+  display: block;
+}
+
+.green-wave-bottom {
+  /* margin-top: -5rem;  */
+  display: block;
 }
 
 .collection-item-container {
@@ -173,6 +199,7 @@ li:hover {
   height: 50%;
   border: 6px solid white;
   margin-top: 3rem;
+  z-index: 5;
 }
 
 .content-items {
@@ -183,7 +210,6 @@ li:hover {
 }
 
 .succ-icon {
-  /* transform: translateX(125%); */
   margin-bottom: 1rem;
 }
 
@@ -211,6 +237,7 @@ li:hover {
 .who-are-we-container {
   background-color: var(--colorLtGreen);
   width: 100%;
+  margin-top: 3rem;
   padding: 4rem 1.5rem 1.5rem 6rem;
   display: flex;
   z-index: -100;
@@ -240,7 +267,7 @@ li:hover {
 
 .our-story {
   height: 4.125rem;
-  width: 12rem;
+  width: 13rem;
   background-color: var(--colorTan);
   color: var(--colorDkGreen);
   border: 1px var(--colorDkGreen) solid;
@@ -362,6 +389,11 @@ li:hover {
   border-bottom: 2px solid var(--colorDkGreen);
   width: 90px;
   cursor: pointer;
+}
+
+.border-b:hover {
+  transition: 0.5s;
+  transform: translateY(0.25rem);
 }
 
 /* Care section */
